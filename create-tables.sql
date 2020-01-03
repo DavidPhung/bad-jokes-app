@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS epiz_24991722_database01;
+USE epiz_24991722_database01;
+
+CREATE TABLE IF NOT EXISTS jokes (
+	joke_id INT AUTO_INCREMENT PRIMARY KEY,
+	`text` TEXT,
+	source VARCHAR(512),
+	source_info VARCHAR(2048),
+    is_qa BOOLEAN,
+	question TEXT,
+	answer TEXT
+) ENGINE=INNODB;
