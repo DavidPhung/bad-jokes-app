@@ -13,7 +13,7 @@ import org.glassfish.jersey.client.ClientConfig;
 import org.glassfish.jersey.client.HttpUrlConnectorProvider;
 import org.glassfish.jersey.client.HttpUrlConnectorProvider.ConnectionFactory;
 
-public class RESTHelper {
+public class RESTUtils {
 	
 	public enum MediaType {TEXT_PLAIN, JSON}
 

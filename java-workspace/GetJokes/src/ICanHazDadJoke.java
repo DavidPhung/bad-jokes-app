@@ -15,7 +15,7 @@ public class ICanHazDadJoke {
 		int totalNbrPages = -1;
 		int pageNbr = 1;
 		do {
-			responseStr = RESTHelper.get(url + "/search?limit=30&page=" + pageNbr, "wwwproxy.se.axis.com", 3128, RESTHelper.MediaType.JSON);
+			responseStr = RESTUtils.get(url + "/search?limit=30&page=" + pageNbr, "wwwproxy.se.axis.com", 3128, RESTUtils.MediaType.JSON);
 			JsonObject jsonObj = JsonParser.parseString(responseStr).getAsJsonObject();
 			
 			if (totalNbrPages == -1) totalNbrPages = jsonObj.get("total_pages").getAsInt();
