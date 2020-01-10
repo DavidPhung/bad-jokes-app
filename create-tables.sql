@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS jokes (
 	`text` TEXT,
 	source VARCHAR(512),
 	source_info VARCHAR(2048),
+	author VARCHAR(256),
     is_qa BOOLEAN,
 	question TEXT,
 	answer TEXT
